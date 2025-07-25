@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/MyPortfoli/static/css/main.3a3a4f95.css",
+    "main.js": "/MyPortfoli/static/js/main.f396015b.js",
+    "static/js/453.5d79306b.chunk.js": "/MyPortfoli/static/js/453.5d79306b.chunk.js",
+    "static/media/TuneCrate Mobile App.mp4": "/MyPortfoli/static/media/TuneCrate Mobile App.35486c893817b10b6b35.mp4",
+    "static/media/officeauto.png": "/MyPortfoli/static/media/officeauto.29369dd04339d102efed.png",
+    "static/media/intro-tocloud.png": "/MyPortfoli/static/media/intro-tocloud.ee77887d4c27a4015d4c.png",
+    "static/media/awscloud.png": "/MyPortfoli/static/media/awscloud.8a41941886636c2c5c77.png",
+    "static/media/intro-to-cyber.png": "/MyPortfoli/static/media/intro-to-cyber.1c9b03a7237737b93594.png",
+    "static/media/explorepage.png": "/MyPortfoli/static/media/explorepage.c2ac2924cfba225c6525.png",
+    "static/media/azurecloud.png": "/MyPortfoli/static/media/azurecloud.eb994f595cc4520ad0b0.png",
+    "static/media/musicplayer.png": "/MyPortfoli/static/media/musicplayer.593d8616d3eafc827c83.png",
+    "static/media/homepage.png": "/MyPortfoli/static/media/homepage.30b78bae474ce291e6a0.png",
+    "static/media/miniplayer.png": "/MyPortfoli/static/media/miniplayer.c7ce5c6209c168bb621e.png",
+    "static/media/dots-effect.png": "/MyPortfoli/static/media/dots-effect.70520316ddd6728168ee.png",
+    "static/media/askary.png": "/MyPortfoli/static/media/askary.85b376cea97d4eed9c16.png",
+    "static/media/Intro-to-Cloud.png": "/MyPortfoli/static/media/Intro-to-Cloud.2f92166aca132cd0a834.png",
+    "static/media/introtocyber.png": "/MyPortfoli/static/media/introtocyber.36c8fd52040e489bf4b1.png",
+    "static/media/azure.png": "/MyPortfoli/static/media/azure.5994b47bcec414b64496.png",
+    "static/media/AWSCERT.png": "/MyPortfoli/static/media/AWSCERT.ff7eb6b8500dabb21653.png",
+    "static/media/gamedev.png": "/MyPortfoli/static/media/gamedev.4e3802f04ab472a03c7f.png",
+    "static/media/BluebgFormal.jpg": "/MyPortfoli/static/media/BluebgFormal.a1f35686474818e26761.jpg",
+    "static/media/TuneCrate.png": "/MyPortfoli/static/media/TuneCrate.e2472ec82006531326fc.png",
+    "static/media/Home.png": "/MyPortfoli/static/media/Home.e00fae481e6110e1e410.png",
+    "static/media/figma.jpg": "/MyPortfoli/static/media/figma.d57ce783df9d05dda5f2.jpg",
+    "static/media/explore.png": "/MyPortfoli/static/media/explore.ca08f58233e23df7403d.png",
+    "static/media/expencepage1.png": "/MyPortfoli/static/media/expencepage1.58eeb96fadb34b2c8050.png",
+    "static/media/expencetracker.png": "/MyPortfoli/static/media/expencetracker.0ee19cd2bd9fc0c00c67.png",
+    "static/media/Hydlogo.jpg": "/MyPortfoli/static/media/Hydlogo.ef40f6d00cd1fd848dda.jpg",
+    "static/media/blossom.jpg": "/MyPortfoli/static/media/blossom.91f033cd377ee796bdc8.jpg",
+    "static/media/nmap.jpg": "/MyPortfoli/static/media/nmap.ab47df086beed21e7a25.jpg",
+    "static/media/winser.jpg": "/MyPortfoli/static/media/winser.5da561af1a7e4ea23e07.jpg",
+    "index.html": "/MyPortfoli/index.html",
+    "main.3a3a4f95.css.map": "/MyPortfoli/static/css/main.3a3a4f95.css.map",
+    "main.f396015b.js.map": "/MyPortfoli/static/js/main.f396015b.js.map",
+    "453.5d79306b.chunk.js.map": "/MyPortfoli/static/js/453.5d79306b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a3a4f95.css",
+    "static/js/main.f396015b.js"
+  ]
+}
