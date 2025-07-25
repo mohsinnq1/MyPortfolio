@@ -16,21 +16,8 @@ const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
  const [filter, setFilter] = useState('All');
   const projects = [
-    {
-    id: 1,
-    title: 'Game Project',
-    category: 'Game',
-    image: '/game.png',
-    duration: '2 Months',
-    description: 'Unity-based puzzle game with challenging levels.',
-    gallery: ['/game1.png', '/game2.png', '/game3.png'],
-    video: '/game-demo.mp4',
-      tools: ['Unity', 'C#'],
-    liveLink: 'https://your-live-link.com',
-    codeLink: 'https://your-code-link.com',
-  },
   {
-    id: 2,
+    id: 1,
     title: 'Android App',
     category: 'Android',
     image: homepage,
@@ -48,7 +35,7 @@ const Projects = () => {
     codeLink: 'https://your-android-code-link.com',
   },
   {
-    id: 3,
+    id: 2,
     title: 'UI/UX Design',
     category: 'UI/UX',
     image: TuneCrate,
@@ -63,7 +50,7 @@ const Projects = () => {
       tools: ['Figma', 'UX Research'],
   },
   {
-    id: 4,
+    id: 3,
     title: 'Personal Expence Tracker',
     category: 'JAVA',
     image: expencetracker,
@@ -109,7 +96,7 @@ The app emphasizes simplicity, ease of use, and visual clarity, making it ideal 
       <h2 className="projects-heading">My Projects</h2>
 
     <div className="project-filters">
-  {['All', 'Game', 'Android', 'UI/UX', 'JAVA'].map((cat) => (
+  {['All', 'Android', 'UI/UX', 'JAVA'].map((cat) => (
     <button
       key={cat}
       onClick={() => setFilter(cat)}
