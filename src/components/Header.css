@@ -1,5 +1,10 @@
+header {
+  width: 100%;
+  overflow-x: auto;
+}
 .navbar {
   display: flex;
+  flex-wrap: wrap; 
   justify-content: center;
   gap: 400px;
   align-items: center;
