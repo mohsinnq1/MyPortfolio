@@ -1,0 +1,217 @@
+.education-center-section {
+  text-align: center;
+  background: linear-gradient(90deg, #0f0f1f, #001f3f);
+  padding: 100px 50px;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+.education-center-section h2 {
+  font-size: 40px;
+  color: #00aaff;
+  margin-bottom: 10px;
+}
+
+.education-center-section h3 {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.education-center-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto 0 auto;
+  justify-content: space-between;
+  margin-top: 400px;
+  margin-bottom: 300px;
+}
+.education-center-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #00aaff;
+  z-index: 1;
+}
+
+.education-center-item {
+  position: relative;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  margin: 0 80px;
+  vertical-align: top;
+}
+
+.education-center-dot {
+  width: 60px;
+  height: 60px;
+  background: #0f0f1f;
+  border: 3px solid #00aaff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+  display: flex;
+  margin: auto;
+  transform: translateX(-35%);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.education-center-dot img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.education-center-content {
+  background: #101020;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 450px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+  position: absolute;
+  gap: 80px;
+  transform: translateX(-9%);
+  word-wrap: break-word;
+}
+
+.education-center-item.down .education-center-content {
+  top: 120px;
+}
+
+.education-center-item.up .education-center-content {
+  bottom: 120px;
+}
+
+.arrow-down {
+  position: absolute;
+  top: -40px;
+  left: 50px;
+  transform: translateX(-80%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #5a5a86;
+}
+
+.arrow-up {
+  position: absolute;
+  bottom: -40px;
+  left: 50px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #5a5a86;
+}
+
+.degree {
+  color: rgb(133, 133, 133);
+  font-weight: bold;
+  font-size: 25px;
+  text-align: left;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.grade {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .education-center-item {
+    display: block;
+    margin: 50px auto;
+  }
+
+  .education-center-content {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    max-width: 90%;
+  }
+
+  .education-center-line {
+    top: auto;
+    bottom: auto;
+    height: 0;
+  }
+}
+.education-content-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.education-content-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 15px;
+  flex-shrink: 0;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+.education-content-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.education-content-info h3 {
+  color: #b1b1b1;
+  margin: 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+.education-content-info .degree {
+  color: #ccc;
+  font-weight: bold;
+  text-align: left;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.education-content-info .date {
+  display: block;
+  text-align: left;
+  color: #888;
+  font-size: 12px;
+  margin-top: 2px;
+  font-weight: bold;
+}
+.education-content-info .grade {
+  display: block;
+  text-align: left;
+  color: #888;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.desc {
+  margin-top: 10px; 
+  list-style-type: disc;
+  color: #ccc;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5;
+}
+.education-center-item.up .education-content-info .degree {
+  text-align: left;
+  display: block;
+}
+.education-center-item.down .education-content-info .degree {
+  text-align: left;
+  display: block;
+}

@@ -1,0 +1,226 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background: linear-gradient(90deg, #0f0f1f, #001f3f), 
+ repeating-linear-gradient(90deg, #101010 0px, #101010 10px, transparent 10px, transparent 20px);
+  text-align: left;
+  
+  padding: 100px 50px;
+  flex-wrap: wrap
+}
+.about-content h2 {
+  font-size: 40px;
+  color: #00aaff;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+@keyframes moveBg {
+  from { background-position: 0 0; }
+  to { background-position: 1000px 0; }
+}
+.about-content, .about-image {
+  flex: 1 1 45%;
+  max-width: 500px;
+}
+.about-content {
+  max-width: 50%;
+}
+
+.about-content h2 {
+  font-size: 40px;
+  color: #dfdfdf;
+}
+
+.about-content h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #ffffff;
+}
+.about-content span {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #494f8b;
+}
+.about-content h4 {
+  font-size: 20px;
+  color: #6b6b6b;
+}
+.cursor {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.about-buttons {
+  margin-top: 20px;
+}
+
+.about-buttons button {
+  margin-right: 10px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.about-buttons button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, #00aaff, #00ffea, #00aaff);
+  transition: all 0.3s ease;
+  z-index: -1;
+  background-size: 200% 100%;
+  animation: moveFill 2s linear infinite;
+  opacity: 0;
+}
+
+.about-buttons button:hover::before {
+  opacity: 1;
+}
+
+.about-buttons button span {
+  position: relative;
+  background: linear-gradient(90deg,  #000000, #8b8b8b, #08171f);
+  background-size: 400% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 8s linear infinite;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 150% 50%;
+  }
+}
+
+.resume-btn {
+  background-color: #00aaff;
+  color: white;
+}
+
+.github-btn {
+  background-color: white;
+  color: #00aaff;
+}
+
+.about-buttons button:hover {
+  opacity: 0.8;
+}
+/* ✅ Chat bubble tail */
+.about-image-tail {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+}
+
+/* ✅ Optional background animation like home-banner */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.about-image-wrapper {
+  position: relative;
+  padding: 40px;
+  z-index: 1;
+}
+
+.about-image-wrapper::before {
+  content: "";
+  background-image: url('./dots-effect.png');
+  position: absolute;
+  top: 0;
+  left: -40px;
+  right: 0;
+  bottom: 0;
+  background-position: left;
+  background-size: cover;
+  animation: spin 140s linear infinite;
+  z-index: -1;
+}
+
+.about-image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200vw;
+  height: 100%;
+  border: 20px solid #918284;
+  border-radius: 310px;
+  background: #011627;
+  z-index: -1;
+}
+
+.about-image-circle {
+  position: relative;
+  border-radius: 50% 50% 0% 50%;
+  border: 15px solid #fff;
+  overflow: hidden;
+  top: 20px;
+  z-index: 1;
+  width: 280px;
+  height: 300px;
+  background: linear-gradient(135deg, #00aaff, #001f3f);
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.5);
+}
+
+.about-image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-image-tail {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+  z-index: 2;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

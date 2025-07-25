@@ -1,0 +1,93 @@
+.skills-section {
+  background: linear-gradient(90deg, #0f0f1f, #001f3f);
+  color: white;
+  padding: 100px 50px;
+  text-align: center;
+}
+.skills-section h2 {
+  font-size: 40px;
+  color: #00aaff;
+}
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills-section h3 {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill-box {
+  background: #101020;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform-style: preserve-3d;
+}
+.skill-box.tilted {
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+}
+
+.skill-box:hover {
+  transform: perspective(800px) rotateX(5deg) rotateY(-5deg);
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+}
+
+.skill-box:hover:nth-child(odd) {
+  transform: perspective(800px) rotateX(-5deg) rotateY(5deg);
+}
+
+.skill-buttons button {
+  margin: 5px;
+  padding: 8px 16px;
+  background: transparent;
+  color: #00aaff;
+  border: 2px solid #00aaff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skill-buttons button:hover {
+  background: #00aaff;
+  color: white;
+}
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.skill-item {
+  border: 2px solid #615454;
+  border-radius: 8px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.skill-item img {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  object-fit:cover;
+}

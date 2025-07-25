@@ -1,0 +1,233 @@
+.contact-section {
+  background: linear-gradient(90deg, #0f0f1f, #001f3f);
+  color: white;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 40px;
+  color: #00aaff;
+}
+
+.globe-wrapper {
+  width: 120px;
+  height: 10px;
+  margin: 0 auto 30px auto;
+  background: radial-gradient(circle, #00aaff, #001f3f);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+}
+
+.contact-section h3 {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-form {
+  background: #101020;
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+}
+
+.contact-form h4 {
+  color: #00aaff;
+  margin-bottom: 20px;
+}
+
+.contact-form .input-box {
+  background: #101020;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+  width: 450px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #00aaff;
+  color: white;
+  outline: none;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.contact-form form button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background: transparent;
+  color: #00aaff;
+  border: 2px solid #00aaff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form form button:hover {
+  background: #00aaff;
+  color: white;
+}
+
+.contact-footer {
+  margin-top: 0;
+}
+
+.footer-wave {
+  position: relative;
+  width: 100%;
+  padding: 100px 0 30px 0;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+   background: linear-gradient(90deg, #0f0f1f, #001f3f);
+  min-height: 220px;
+}
+
+
+.footer-wave h3 {
+  color: #00aaff;
+  margin-bottom: 20px;
+}
+
+.footer-wave .footer-nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.footer-nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  position: relative;
+  transition: 0.3s;
+}
+
+.footer-nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background: #00aaff;
+  transition: width 0.3s ease;
+}
+
+.footer-nav-links li a:hover::after {
+  width: 100%;
+}
+
+.footer-wave .footer-social a {
+  margin: 0 20px;
+  font-size: 24px;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.footer-wave .footer-social a:hover {
+  color: #00aaff;
+}
+
+.footer-wave p {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.wave-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-size: 1000px 350px;
+  opacity: 0.5;
+  animation: waveMove 10s ease-in-out infinite alternate;
+}
+
+
+.wave1,
+.wave2,
+.wave3 {
+  bottom: 0;
+}
+
+.footer-wave > *:not(.wave-container) {
+  position: relative;
+  z-index: 1;
+}
+
+.wave1 {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,40 C300,80 900,0 1200,40 L1200,120 L0,120 Z" fill="%23001020"/></svg>');
+  animation-duration: 12s;
+}
+
+.wave2 {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,60 C300,100 900,20 1200,60 L1200,120 L0,120 Z" fill="%23000f2f"/></svg>');
+  animation-duration: 15s;
+}
+
+.wave3 {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,80 C300,120 900,40 1200,80 L1200,120 L0,120 Z" fill="%23001f3f"/></svg>');
+  animation-duration: 20s;
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-nav-links,
+  .footer-social,
+  .footer-wave {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+  }
+}

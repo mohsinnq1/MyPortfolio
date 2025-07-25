@@ -1,0 +1,190 @@
+.certificates-section {
+  background: linear-gradient(90deg, #0f0f1f, #001f3f);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 80px 20px;
+}
+
+.certificates-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.certificate-card {
+  width: 500px;
+  border-radius: 15px;
+  transition: 0.3s;
+  margin-bottom: -320px;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.certificate-img img {
+  width: 100%;
+  height: 500px;
+  border-radius: 40px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+.certificate-text {
+  padding: 15px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.certificate-text h3 {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.certificate-category span {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(220, 220, 220);
+  font-size: 12px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin: 5px 5px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.certificate-category span:hover {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: default;
+}
+
+.certificate-card.left {
+  align-self: flex-start;
+  margin-left: 400px;
+}
+
+.certificate-card.right {
+  align-self: flex-end;
+  margin-right: 400px;
+}
+
+.bi-btn-4 {
+  margin-top: 300px;
+}
+
+.bi-btn-4 a {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bi-btn-4 a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, #00aaff, #00ffea, #00aaff);
+  transition: all 0.3s ease;
+  z-index: -1;
+  background-size: 200% 100%;
+  animation: moveFill 2s linear infinite;
+  opacity: 0;
+}
+
+.bi-btn-4 a:hover::before {
+  opacity: 1;
+}
+
+.bi-btn-4 a span {
+  position: relative;
+  background: linear-gradient(90deg,  #000000, #8b8b8b, #08171f);
+  background-size: 400% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 8s linear infinite;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #101020;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+  animation: zoomIn 0.4s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.modal-content img:hover {
+  transform: scale(1.1);
+}
+.details-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.details-btn:hover {
+  background: #0088cc;
+  transform: translateY(-2px);
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
