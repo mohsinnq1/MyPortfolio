@@ -1,43 +1,28 @@
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-    padding: 50px 20px;
-  }
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* About Section Default (Desktop) */
 .about-section {
   display: flex;
   justify-content: center;
   align-items: center;
- background: linear-gradient(90deg, #0f0f1f, #001f3f), 
- repeating-linear-gradient(90deg, #101010 0px, #101010 10px, transparent 10px, transparent 20px);
+  background: linear-gradient(90deg, #0f0f1f, #001f3f),
+              repeating-linear-gradient(90deg, #101010 0px, #101010 10px, transparent 10px, transparent 20px);
   text-align: left;
-  
   padding: 100px 50px;
-  flex-wrap: wrap
-}
-.about-content h2 {
-  font-size: 40px;
-  color: #00aaff;
+  flex-wrap: wrap;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  max-width: 1000px;
-  margin: auto;
-}
-@keyframes moveBg {
-  from { background-position: 0 0; }
-  to { background-position: 1000px 0; }
-}
-.about-content, .about-image {
+.about-content {
   flex: 1 1 45%;
   max-width: 500px;
-}
-.about-content {
- max-width: 100%;
-    width: 100%;
-    padding: 0;
 }
 
 .about-content h2 {
@@ -50,15 +35,18 @@
   font-size: 24px;
   color: #ffffff;
 }
+
 .about-content span {
   margin-top: 10px;
   font-size: 24px;
   color: #494f8b;
 }
+
 .about-content h4 {
   font-size: 20px;
   color: #6b6b6b;
 }
+
 .cursor {
   animation: blink 0.7s infinite;
 }
@@ -69,6 +57,7 @@
   100% { opacity: 1; }
 }
 
+/* Buttons */
 .about-buttons {
   margin-top: 20px;
 }
@@ -84,8 +73,6 @@
   color: white;
   font-weight: 500;
   letter-spacing: 0.5px;
-  width: 100%;
-    margin-bottom: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -114,7 +101,7 @@
 
 .about-buttons button span {
   position: relative;
-  background: linear-gradient(90deg,  #000000, #8b8b8b, #08171f);
+  background: linear-gradient(90deg, #000000, #8b8b8b, #08171f);
   background-size: 400% 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -124,12 +111,8 @@
 }
 
 @keyframes gradientFlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 150% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  100% { background-position: 150% 50%; }
 }
 
 .resume-btn {
@@ -145,28 +128,14 @@
 .about-buttons button:hover {
   opacity: 0.8;
 }
-/* ✅ Chat bubble tail */
-.about-image-tail {
-  position: absolute;
-  bottom: -15px;
-  right: -15px;
-  width: 40px;
-  height: 40px;
-  background: white;
-  border-radius: 50%;
-  clip-path: polygon(0 50%, 100% 100%, 100% 0);
-  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
-}
 
-/* ✅ Optional background animation like home-banner */
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+/* About Image */
 .about-image-wrapper {
   position: relative;
-  padding: 20px;
+  padding: 40px;
   z-index: 1;
+  flex: 1 1 45%;
+  max-width: 500px;
 }
 
 .about-image-wrapper::before {
@@ -233,4 +202,27 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .about-content,
+  .about-image-wrapper {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-buttons button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .about-image-wrapper {
+    padding: 20px;
+  }
 }
