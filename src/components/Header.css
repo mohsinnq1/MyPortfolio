@@ -1,8 +1,16 @@
+/* Prevent horizontal scroll on body */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 header {
   width: 100%;
   overflow-x: auto;
 }
 .navbar {
+  max-width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
