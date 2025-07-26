@@ -51,7 +51,10 @@ header {
   overflow-x: hidden;
   flex-shrink: 0;
 }
-
+.navbar nav ul li {
+  white-space: nowrap;
+  margin: 0 10px;
+}
 .navbar nav ul li a {
   color: white;
   text-decoration: none;
