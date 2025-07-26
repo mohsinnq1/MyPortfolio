@@ -20,7 +20,6 @@ header {
 @media (max-width: 768px) {
   .navbar nav ul {
     justify-content: center;
-     gap: 20px !important;
   }
 }
 
