@@ -18,10 +18,27 @@ header {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    gap: 20px !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+  }
+
   .navbar nav ul {
-    justify-content: center;
+    gap: 10px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .navbar nav ul li {
+    white-space: nowrap;
+  }
+
+  .navbar .logo {
+    white-space: nowrap;
   }
 }
+
 
 .navbar .logo {
   font-size: 24px;
