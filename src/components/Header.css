@@ -1,61 +1,59 @@
+/* Global reset and prevent scroll issues */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+/* Header and Navbar container */
 header {
   width: 100%;
   overflow-x: auto;
 }
+
+/* Main navbar styling */
 .navbar {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 400px;
   align-items: center;
+  justify-content: flex-start;
+  gap: 400px;
   background: linear-gradient(90deg, #0f0f1f, #001f3f);
   padding: 20px 40px;
-  text-align: center;
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 100;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    gap: 20px !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    overflow-x: auto !important;
-  }
-
-  .navbar nav ul {
-    gap: 10px !important;
-    flex-wrap: nowrap !important;
-  }
-
-  .navbar nav ul li {
-    white-space: nowrap;
-  }
-
-  .navbar .logo {
-    white-space: nowrap;
-  }
-}
-
-
+/* Logo styling */
 .navbar .logo {
   font-size: 24px;
   font-weight: bold;
   color: #8400ff;
+  flex-shrink: 0;
 }
 
 .navbar .logo .white-text {
   color: #ffffff;
 }
 
-
-
+/* Navigation menu */
 .navbar nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-shrink: 0;
+}
+
+.navbar nav ul li {
+  white-space: nowrap;
 }
 
 .navbar nav ul li a {
@@ -67,6 +65,7 @@ header {
   transition: 0.3s;
 }
 
+/* Hover underline animation */
 .navbar nav ul li a::after {
   content: '';
   position: absolute;
@@ -81,16 +80,26 @@ header {
 .navbar nav ul li a:hover::after {
   width: 100%;
 }
-/* Prevent horizontal scroll on body */
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
 
-/* Limit navbar overflow area */
-.navbar {
-  max-width: 100%;
-  box-sizing: border-box;
-}
+/* Responsive tweaks for small screens */
+@media (max-width: 768px) {
+  .navbar {
+    gap: 40px;
+    padding: 15px 20px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
 
+  .navbar nav ul {
+    gap: 15px;
+    flex-wrap: nowrap;
+  }
+
+  .navbar .logo {
+    white-space: nowrap;
+  }
+
+  .navbar nav ul li {
+    white-space: nowrap;
+  }
+}
