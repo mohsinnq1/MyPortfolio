@@ -158,9 +158,6 @@
   position: relative;
   padding: 40px;
   z-index: 1;
-  max-width: 100%;
-  overflow: hidden;
-  text-align: center;
 }
 
 .about-image-wrapper::before {
@@ -205,7 +202,7 @@
 
 .about-image-circle img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
