@@ -33,8 +33,6 @@ header {
   color: #ffffff;
 }
 
-
-
 .navbar nav ul {
   list-style: none;
   display: flex;
@@ -63,4 +61,26 @@ header {
 
 .navbar nav ul li a:hover::after {
   width: 100%;
+}
+
+/* ✅ Mobile responsive addition (without changing original code) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+    text-align: center;
+  }
 }
