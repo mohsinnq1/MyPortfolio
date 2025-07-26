@@ -58,6 +58,14 @@
   padding: 10px 20px;
   box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
 }
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 10px 0;
+}
 
 .contact-form .input-box input,
 .contact-form .input-box textarea {
