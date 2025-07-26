@@ -1,21 +1,26 @@
 /* Reset and box sizing */
+/* Reset and full containment */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Root and base settings */
 html, body {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
-  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   background: linear-gradient(90deg, #0f0f1f, #001f3f);
   color: white;
-  text-align: center;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Prevent any child from causing horizontal scroll */
+body > * {
+  max-width: 100%;
   overflow-x: hidden;
-  width: 100%;
-  max-width: 100vw;
 }
 
 /* App wrapper */
