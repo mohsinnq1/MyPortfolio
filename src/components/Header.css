@@ -18,11 +18,8 @@ header {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    gap: 20px !important;     /* Smaller gap on mobile */
-    flex-wrap: nowrap;        /* Prevent items from wrapping to next line */
-    overflow-x: auto;         /* Allow horizontal scroll if needed */
-    justify-content: flex-start; /* Align to the left to avoid center squeeze */
+  .navbar nav ul {
+    justify-content: center;
   }
 }
 
@@ -36,9 +33,12 @@ header {
   color: #ffffff;
 }
 
+
+
 .navbar nav ul {
   list-style: none;
   display: flex;
+  gap: 20px;
 }
 
 .navbar nav ul li a {
@@ -63,26 +63,4 @@ header {
 
 .navbar nav ul li a:hover::after {
   width: 100%;
-}
-
-/* ✅ Mobile responsive addition (without changing original code) */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 20px;
-    padding: 15px;
-  }
-
-  .navbar nav ul {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .navbar .logo {
-    font-size: 20px;
-    text-align: center;
-  }
 }
