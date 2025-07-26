@@ -24,12 +24,19 @@ body > * {
 }
 
 /* App wrapper */
+/* Ensures container doesn't cause overflow */
 #root, .App {
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 100%;
   overflow-x: hidden;
 }
+
+/* Fix potential scale transforms that break layout */
+body {
+  transform: none !important;
+  transform-origin: unset !important;
+}
+
 
 .App {
   text-align: center;
