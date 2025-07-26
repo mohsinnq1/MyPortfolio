@@ -123,3 +123,30 @@ body {
   transform: none !important;
   transform-origin: top left !important;
 }
+/* === FINAL FIX FOR MOBILE RIGHT WHITE SPACE ISSUE === */
+body, html {
+  overflow-x: hidden !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent hidden overflow from nested flex/absolute elements */
+.App, #root, .content-wrapper, section {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+}
+
+/* If any custom component is going off screen, this will catch it */
+body * {
+  max-width: 100vw;
+}
+
