@@ -1,16 +1,8 @@
-/* Prevent horizontal scroll on body */
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
 header {
   width: 100%;
   overflow-x: auto;
 }
 .navbar {
-  max-width: 100%;
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -89,3 +81,16 @@ header {
 .navbar nav ul li a:hover::after {
   width: 100%;
 }
+/* Prevent horizontal scroll on body */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Limit navbar overflow area */
+.navbar {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
