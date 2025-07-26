@@ -1,47 +1,49 @@
 /* Global Reset */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
   overflow-x: hidden;
 }
 
 /* About Section Default (Desktop) */
 .about-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, #0f0f1f, #001f3f),
               repeating-linear-gradient(90deg, #101010 0px, #101010 10px, transparent 10px, transparent 20px);
   text-align: left;
   padding: 100px 50px;
-  flex-wrap: wrap;
+  width: 100%; /* ✅ Add this */
 }
 
 .about-content {
   flex: 1 1 45%;
   max-width: 500px;
+  width: 100%;
 }
 
 .about-content h2 {
   font-size: 40px;
   color: #dfdfdf;
 }
-
 .about-content h3 {
   margin-top: 10px;
   font-size: 24px;
   color: #ffffff;
 }
-
 .about-content span {
   margin-top: 10px;
   font-size: 24px;
   color: #494f8b;
 }
-
 .about-content h4 {
   font-size: 20px;
   color: #6b6b6b;
@@ -78,6 +80,8 @@ html, body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: relative;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .about-buttons button::before {
@@ -136,6 +140,7 @@ html, body {
   z-index: 1;
   flex: 1 1 45%;
   max-width: 500px;
+  width: 100%;
 }
 
 .about-image-wrapper::before {
@@ -157,7 +162,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200vw;
+  width: 100%; /* ✅ Was 200vw — causes layout break */
   height: 100%;
   border: 20px solid #918284;
   border-radius: 310px;
