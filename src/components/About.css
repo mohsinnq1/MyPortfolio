@@ -30,7 +30,9 @@
   max-width: 500px;
 }
 .about-content {
-  max-width: 50%;
+ max-width: 100%;
+    width: 100%;
+    padding: 0;
 }
 
 .about-content h2 {
@@ -156,7 +158,7 @@
 }
 .about-image-wrapper {
   position: relative;
-  padding: 40px;
+  padding: 20px;
   z-index: 1;
 }
 
@@ -224,3 +226,8 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
