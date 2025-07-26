@@ -18,11 +18,14 @@ html, body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Navbar styling */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #0f0f1f, #001f3f);
@@ -31,7 +34,6 @@ html, body {
   top: 0;
   z-index: 100;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 /* Logo */
@@ -50,10 +52,12 @@ html, body {
 .navbar nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar nav ul li {
@@ -103,8 +107,8 @@ section h3 {
   .navbar {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
     padding: 15px 20px;
+    gap: 10px;
   }
 
   .navbar nav ul {
@@ -122,13 +126,38 @@ section h3 {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .navbar .logo {
     font-size: 20px;
+    text-align: center;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 
   .navbar nav ul li a {
+    font-size: 16px;
     padding: 8px;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .logo {
+    font-size: 18px;
+  }
+
+  .navbar nav ul li a {
     font-size: 14px;
+    padding: 6px;
+  }
+
+  section {
+    padding: 20px 8px;
   }
 }
