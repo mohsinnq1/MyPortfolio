@@ -36,9 +36,6 @@ header {
 .navbar nav ul {
   list-style: none;
   display: flex;
-   flex-direction: column;
-    gap: 10px;
-    align-items: center;
 }
 
 .navbar nav ul li a {
