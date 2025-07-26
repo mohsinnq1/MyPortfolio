@@ -31,7 +31,8 @@
 
 .allcertificates-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+    padding: 0 10px;
   gap: 30px;
   max-width: 1000px;
   margin: auto;
@@ -40,6 +41,7 @@
 
 .allcertificates-card {
   border-radius: 20px;
+   margin: 0 auto;
   overflow: hidden;
   transition: 0.3s;
 }
