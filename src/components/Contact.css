@@ -177,8 +177,10 @@
 
 .wave {
   position: absolute;
-  width: 200%;
+  width:100vw;
   height: 100%;
+   max-width: 100%;
+  overflow: hidden;
   background-repeat: repeat-x;
   background-size: 1000px 350px;
   opacity: 0.5;
@@ -214,7 +216,7 @@
 
 @keyframes waveMove {
   0% {
-    transform: translateX(0);
+    transform: translateX(1);
   }
   100% {
     transform: translateX(-50%);
