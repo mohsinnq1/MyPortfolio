@@ -24,11 +24,6 @@ header {
     overflow-x: auto;         /* Allow horizontal scroll if needed */
     justify-content: flex-start; /* Align to the left to avoid center squeeze */
   }
-
-  .navbar nav ul {
-    gap: 10px;
-    flex-wrap: nowrap;
-  }
 }
 
 .navbar .logo {
