@@ -75,6 +75,8 @@ img, video, iframe {
 .content-wrapper {
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Links */
