@@ -184,9 +184,11 @@
   overflow-x: hidden;
   display: block;
   left: 0;
+  pointer-events: none;
   background-repeat: repeat-x;
   background-size: 1000px 350px;
   opacity: 0.5;
+  z-index: 0;
   animation: waveMove 10s ease-in-out infinite alternate;
 }
 
