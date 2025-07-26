@@ -1,8 +1,8 @@
-/* Global reset and prevent scroll issues */
+/* Reset styles */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,29 +10,26 @@ body {
   font-family: sans-serif;
 }
 
-/* Header and Navbar container */
+/* Header area */
 header {
   width: 100%;
+  background: linear-gradient(90deg, #0f0f1f, #001f3f);
   overflow-x: auto;
 }
 
-/* Main navbar styling */
+/* Navbar */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 400px;
-  background: linear-gradient(90deg, #0f0f1f, #001f3f);
+  justify-content: center;
+  gap: 40px;
   padding: 20px 40px;
   color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 100;
   white-space: nowrap;
   overflow-x: auto;
 }
 
-/* Logo styling */
+/* Make sure no left alignment on desktop */
 .navbar .logo {
   font-size: 24px;
   font-weight: bold;
@@ -44,16 +41,12 @@ header {
   color: #ffffff;
 }
 
-/* Navigation menu */
+/* Nav menu */
 .navbar nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
   flex-shrink: 0;
-}
-
-.navbar nav ul li {
-  white-space: nowrap;
 }
 
 .navbar nav ul li a {
@@ -65,7 +58,7 @@ header {
   transition: 0.3s;
 }
 
-/* Hover underline animation */
+/* Hover effect */
 .navbar nav ul li a::after {
   content: '';
   position: absolute;
@@ -81,25 +74,15 @@ header {
   width: 100%;
 }
 
-/* Responsive tweaks for small screens */
+/* Fix mobile scroll issue */
 @media (max-width: 768px) {
   .navbar {
-    gap: 40px;
+    justify-content: flex-start;
+    gap: 30px;
     padding: 15px 20px;
-    overflow-x: auto;
-    flex-wrap: nowrap;
   }
 
   .navbar nav ul {
     gap: 15px;
-    flex-wrap: nowrap;
-  }
-
-  .navbar .logo {
-    white-space: nowrap;
-  }
-
-  .navbar nav ul li {
-    white-space: nowrap;
   }
 }
