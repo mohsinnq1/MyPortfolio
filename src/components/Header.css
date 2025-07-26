@@ -20,6 +20,7 @@ header {
 @media (max-width: 768px) {
   .navbar nav ul {
     justify-content: center;
+     gap: 20px !important;
   }
 }
 
@@ -36,7 +37,9 @@ header {
 .navbar nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+   flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 .navbar nav ul li a {
