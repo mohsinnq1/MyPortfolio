@@ -18,8 +18,16 @@ header {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    gap: 20px !important;     /* Smaller gap on mobile */
+    flex-wrap: nowrap;        /* Prevent items from wrapping to next line */
+    overflow-x: auto;         /* Allow horizontal scroll if needed */
+    justify-content: flex-start; /* Align to the left to avoid center squeeze */
+  }
+
   .navbar nav ul {
-    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
   }
 }
 
