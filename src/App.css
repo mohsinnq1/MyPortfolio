@@ -5,6 +5,7 @@
   padding: 0;
 }
 
+/* Global styling */
 html, body {
   width: 100%;
   max-width: 100%;
@@ -29,6 +30,12 @@ body > * {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0 auto;
+}
+
+/* Fix for unexpected overflow */
+.App * {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Text center */
@@ -91,7 +98,7 @@ section {
   z-index: -1;
 }
 
-/* Ensure no right-side white space */
+/* Extra protection against right-side white space */
 body,
 html,
 #root,
