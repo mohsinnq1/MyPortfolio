@@ -81,3 +81,33 @@
 .navbar nav ul li a:hover::after {
   width: 100%;
 }
+@media screen and (max-width: 534px) {
+
+  .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #0f0f1f, #001f3f);
+  text-align: center;
+  gap: 2px;
+  color: #fff;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 5px;
+  gap: 1px;
+}
+.navbar .logo .white-text {
+  color: #ffffff;
+  font-size: 5px;
+}
+.navbar .logo {
+  font-size: 5px;
+  font-weight: bold;
+  color: #8400ff;
+}
+}
