@@ -50,3 +50,24 @@
   max-width: 100%;
 }
 }
+@media (max-width:534px ) {
+#bubbles-container {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  background: rgba(0, 170, 255, 0.2);
+  border-radius: 50%;
+  animation: rise 10s linear infinite;
+  opacity: 0.5;
+  max-width: 100%;
+}
+}
