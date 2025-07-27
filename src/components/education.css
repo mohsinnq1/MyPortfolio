@@ -279,3 +279,88 @@
   border-right: 10px solid #5a5a86; /* Left-pointing triangle */
 }
 }
+@media (max-width: 534px) {
+.education-content-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 8px;
+  flex-shrink: 0;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+.education-content-image img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+  .education-content-info h3 {
+  color: #b1b1b1;
+  margin: 0;
+  text-align: left;
+  font-size: 8px;
+}
+
+.education-content-info .degree {
+  color: #ccc;
+  font-weight: bold;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.education-content-info .date {
+  display: block;
+  text-align: left;
+  color: #888;
+  font-size: 8px;
+  margin-top: 2px;
+  font-weight: bold;
+}
+  .desc {
+  font-size: 4px;
+  line-height: 1.5;
+  text-align: left;
+}
+  .education-center-dot {
+    transform: translateY(-270%) translateX(1%);
+  }
+
+  .education-center-item.up .education-center-content {
+    position: absolute;
+    right: calc(20% + 150px);
+    bottom: 0;
+    transform: translateY(-10%);
+  }
+
+  .education-center-item.down .education-center-content {
+    position: absolute;
+    left: calc(23% + 150px);
+    top: 0;
+    transform: translateY(-80%);
+  }
+
+  .education-center-content {
+    min-width: 100px;
+    height: 200px;
+    position: relative;
+  }
+
+  .arrow-left {
+    right:10px;
+    transform: translateY(30%);
+  }
+
+  .arrow-right {
+    left: 178px;
+    transform: translateY(50%);
+  }
+
+  .experience-center-section h2 {
+    font-size: 12px;
+  }
+
+  .experience-center-section h3 {
+    font-size: 5px;
+  }
+}
