@@ -1,4 +1,4 @@
-import './About.css';
+import './About.css'
 import { useEffect, useState, useMemo } from 'react';
 import BluebgFormal from './BluebgFormal.jpg';
 
@@ -7,8 +7,18 @@ function About() {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+useEffect(() => {
+  const handleResize = () => {
+    console.log("Window width:", window.innerWidth);
+  };
 
+  window.addEventListener('resize', handleResize);
+  handleResize(); // Log immediately on mount
+
+  return () => window.removeEventListener('resize', handleResize);
+}, []);
   useEffect(() => {
+    
     const current = roles[index % roles.length];
     const interval = setInterval(() => {
       if (isDeleting) {
@@ -26,6 +36,7 @@ function About() {
     }, 150);
 
     return () => clearInterval(interval);
+    
   }, [text, isDeleting, index, roles]);
 
   return (

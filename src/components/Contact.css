@@ -21,7 +21,6 @@
   justify-content: center;
   box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
 }
-
 .contact-section h3 {
   font-size: 18px;
   color: #ccc;
@@ -179,6 +178,9 @@
   position: absolute;
   width: 200%;
   height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  z-index: -1;
   background-repeat: repeat-x;
   background-size: 1000px 350px;
   opacity: 0.5;
@@ -221,13 +223,97 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
+.wave {
+  width: 200%;
+  height: 600px;
+}
+.footer-nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* For Firefox */
+}
+  .footer-nav-links li {flex-shrink: 0;
+    font-size: 12px;
+  }
+
+  .footer-wave h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+.contact-section h2 {
+  font-size: 12px;
+  color: #00aaff;
+}
+.contact-section h3 {
+  font-size: 5px;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+  .contact-form {
+  background: #101020;
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+}
+
+.contact-form h4 {
+  color: #00aaff;
+  margin-bottom: 20px;
+}
+
+.contact-form .input-box {
+  background: #101020;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+  width: 420px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #00aaff;
+  color: white;
+  outline: none;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.contact-form form button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background: transparent;
+  color: #00aaff;
+  border: 2px solid #00aaff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form form button:hover {
+  background: #00aaff;
+  color: white;
+}
   .footer-nav-links,
   .footer-social,
   .footer-wave {
-    flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 30px;
+    padding: 10px;
   }
 }

@@ -6,6 +6,7 @@
   position: relative;
   overflow-x: hidden;
 }
+
 .experience-center-section h2 {
   font-size: 40px;
   color: #00aaff;
@@ -15,34 +16,37 @@
 .experience-center-section h3 {
   font-size: 18px;
   color: #ccc;
-  margin-bottom: 50px; /* Creates gap between heading and experience */
+  margin-bottom: 50px;
 }
 
 .experience-center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   width: 100%;
   max-width: 1000px;
-  margin: 50px auto 0 auto;
-  margin-top: 400px;
-  margin-bottom: 300px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
 .experience-center-line {
   position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 4px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
   background: #00aaff;
   z-index: 1;
+  transform: translateX(-50%);
 }
 
 .experience-center-item {
   position: relative;
-  width: auto;
+  width: 100%;
   text-align: center;
-  display: inline-block;
-  margin: 0 80px;
-  vertical-align: top;
+  margin: 100px 0;
 }
 
 .experience-center-dot {
@@ -54,7 +58,6 @@
   box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
   display: flex;
   margin: auto;
-  transform: translateX(-110%);
   position: relative;
   z-index: 2;
   overflow: hidden;
@@ -75,41 +78,45 @@
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
   position: absolute;
-  left: 150px;
-  transform: translateX(-50%);
   word-wrap: break-word;
 }
 
-.experience-center-item.down .experience-center-content {
-  top: 120px;
-}
-
 .experience-center-item.up .experience-center-content {
-  bottom: 120px;
+  position: absolute;
+  right: calc(50% + 90px);
+  bottom: 0;
+  transform: translateY(80%);
 }
 
-.arrow-down {
+.experience-center-item.down .experience-center-content {
   position: absolute;
-  top: -40px;
-  left: 50px;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #5a5a86;
+  left: calc(50% + 90px);
+  top: 0;
+  transform: translateY(-2%);
 }
 
-.arrow-up {
+.arrow-left {
   position: absolute;
-  bottom: -40px;
-  left: 50px;
-  transform: translateX(-50%);
+  top: 12%;
+  right: 500px;
+  transform: translateY(-50%);
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #5a5a86;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #5a5a86;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 10%;
+  left: 500px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #5a5a86;
 }
 
 .degree {
@@ -126,25 +133,6 @@
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  .experience-center-item {
-    display: block;
-    margin: 50px auto;
-  }
-
-  .experience-center-content {
-    position: static;
-    transform: none;
-    margin-top: 10px;
-    max-width: 90%;
-  }
-
-  .experience-center-line {
-    top: auto;
-    bottom: auto;
-    height: 0;
-  }
-}
 .experience-content-header {
   display: flex;
   align-items: center;
@@ -199,11 +187,51 @@
   text-align: left;
   line-height: 1.5;
 }
-.experience-center-item.up .experience-content-info .degree {
-  text-align: left;
-  display: block;
-}
+
+.experience-center-item.up .experience-content-info .degree,
 .experience-center-item.down .experience-content-info .degree {
   text-align: left;
   display: block;
+}
+@media (max-width: 980px) {
+  .experience-center-dot {
+    transform: translateY(-270%) translateX(1%);
+  }
+
+  .experience-center-item.up .experience-center-content {
+    position: absolute;
+    right: calc(50% + 90px);
+    bottom: 0;
+    transform: translateY(45%);
+  }
+
+  .experience-center-item.down .experience-center-content {
+    position: absolute;
+    left: calc(50% + 90px);
+    top: 0;
+    transform: translateY(-50%);
+  }
+
+  .experience-center-content {
+    min-width: 300px;
+    position: relative;
+  }
+
+  .arrow-left {
+    right: 380px;
+    transform: translateY(-45%);
+  }
+
+  .arrow-right {
+    left: 380px;
+    transform: translateY(-45%);
+  }
+
+  .experience-center-section h2 {
+    font-size: 12px;
+  }
+
+  .experience-center-section h3 {
+    font-size: 5px;
+  }
 }

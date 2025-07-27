@@ -18,7 +18,7 @@ function Education() {
             <img src={MATRICBOARD} alt="Matriculation" />
           </div>
           <div className="education-center-content">
-            <div className="arrow-down"></div>
+            <div className="arrow-left"></div>
             <div className="education-content-header">
               <div className="education-content-image">
                 <img src={MATRICBOARD} alt="Matriculation Logo" />
@@ -45,7 +45,7 @@ function Education() {
             <img src={Hydlogo} alt="Intermediate" />
           </div>
           <div className="education-center-content">
-            <div className="arrow-up"></div>
+            <div className="arrow-right"></div>
             <div className="education-content-header">
               <div className="education-content-image">
                 <img src={Hydlogo} alt="Intermediate Logo" />
@@ -72,7 +72,7 @@ function Education() {
             <img src={iqralogo} alt="Bachelor" />
           </div>
           <div className="education-center-content">
-            <div className="arrow-down"></div>
+            <div className="arrow-left"></div>
             <div className="education-content-header">
               <div className="education-content-image">
                 <img src={iqralogo} alt="Iqra University Logo" />

@@ -3,7 +3,7 @@
   background-color: #0f0f1f;
   background: linear-gradient(90deg, #0f0f1f, #001f3f);
   color: white;
-  min-height: 100vh;
+  min-height: 100%;
   overflow-x: hidden;
 }
 
@@ -318,6 +318,20 @@
   100% {
     background-position: 150% 50%;
   }
+}
+@media (max-width: 980px){
+  .project-info p {
+  font-size: 5px;
+  color: #6e6d6d;
+  margin-bottom: 10px;
+  justify-content: left;
+}
+  .tool-button {
+  padding: 5px 10px;
+}
+.tool-button {
+  font-size: 10px;
+}
 }
 
 

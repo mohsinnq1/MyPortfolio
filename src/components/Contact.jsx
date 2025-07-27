@@ -71,7 +71,7 @@ function Contact() {
     </div>
 
     <h3>Mohsin Nawaz</h3>
-    <nav>
+    <nav style={{ overflowX: "auto", width: "100%", whiteSpace: "nowrap" }}>
       <ul className="footer-nav-links">
         <li><Link to="about" smooth={true} offset={-80} duration={500}>About</Link></li>
         <li><Link to="skills" smooth={true} offset={-80} duration={500}>Skills</Link></li>

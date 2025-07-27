@@ -16,7 +16,7 @@ function Experience() {
             <img src={blossom} alt="Game Development Internship" />
           </div>
           <div className="experience-center-content">
-                <div className="arrow-down"></div>
+                <div className="arrow-left"></div>
             <div className="experience-content-header">
               <div className="experience-content-image">
                 <img src={blossom} alt="Matric" />
@@ -43,7 +43,7 @@ function Experience() {
             <img src={youngdev} alt="Cybersecurity Internship" />
           </div>
           <div className="experience-center-content">
-                <div className="arrow-up"></div>
+                <div className="arrow-right"></div>
             <div className="experience-content-header">
               <div className="experience-content-image">
                 <img src={youngdev} alt="Matric" />
