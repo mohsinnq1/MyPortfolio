@@ -351,17 +351,46 @@
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
+}
+.nav-button:first-of-type {
+  left: 10px;
+  border-radius: 10px 0 0 10px;
+=======
+>>>>>>> 82f1ab8 (Updated files)
 }
 .nav-button:first-of-type {
   left: 10px;
   border-radius: 10px 0 0 10px;
 }
-@media (max-width: 534px){
+
+
+.nav-button:last-of-type {
+  right:10px;
+  border-radius: 0 10px 10px 0;
+}
+  .carousel {
+    max-width: 800px;
+    padding: 15px;
+  }
+
+  .carousel-image {
+    max-height: 800px;
+  }
+}
+@media (max-width: 768px){
+  .projects-container{
+    overflow: visible;
+  }
+  .projects-container h2{
+    font-size: 40px !important;
+    margin-top: -10px;
+  }
   .project-card {
   background: #101020;
   padding: 8px;
-  max-width: 80px;
-  max-height: 180px;
+  width: 500px;
+  max-height: 500px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
   transition: 0.3s;
@@ -372,8 +401,7 @@
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 50px;
   justify-content: center;
   align-items: stretch;
   max-width: 1200px;
@@ -407,7 +435,7 @@
     padding: 1px 5px;
   }
 .project-description {
-  font-size: 2px;
+  font-size: 15px;
   color: #6e6d6d;
   text-align: left;
   display: -webkit-box;
@@ -418,20 +446,58 @@
   max-height: 60px;  
 }
   .project-filters button {
-  padding: 5px 15px; /* smaller padding */
-  font-size: 2px;   /* smaller text */
+  padding: 5px 10px; /* smaller padding */
+  font-size: 6px; 
 }
   .project-info p {
-  font-size: 5px;
+  font-size: 15px;
   color: #6e6d6d;
   margin-bottom: 10px;
   justify-content: left;
 }
   .tool-button {
-  padding: 2px 5px;
+  padding: 5px 20px;
 }
 .tool-button {
-  font-size: 5px;
+  font-size: 12px;
+}
+  .carousel {
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .carousel-image {
+    max-height: 200px;
+  }
+  .nav-button {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  width: 50px;
+  height: 200px;
+  background: rgba(15, 15, 31, 0.6);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.3s ease, opacity 0.3s ease;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-button:first-of-type {
+  left: 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+
+.nav-button:last-of-type {
+  right:10px;
+  border-radius: 0 10px 10px 0;
 }
 }
 

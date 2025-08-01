@@ -317,7 +317,7 @@
     padding: 10px;
   }
 }
-@media (max-width: 534px) {
+@media (max-width: 768px) {
 .wave {
   width: 200%;
   height: 650px;
@@ -334,7 +334,7 @@
 }
   .footer-nav-links li {
     flex-shrink: 0;
-    font-size:6.5px;
+    font-size:6.px;
   }
 
   .footer-wave h3 {
@@ -346,11 +346,12 @@
     margin-top: 5px;
   }
 .contact-section h2 {
-  font-size: 12px;
+  margin-top: -40px;
+  font-size: 40px;
   color: #00aaff;
 }
 .contact-section h3 {
-  font-size: 5px;
+  font-size: 18px !important;
   color: #ccc;
   margin-bottom: 50px;
 }
@@ -368,7 +369,9 @@
   color: #00aaff;
   margin-bottom: 20px;
 }
-
+.contact-footer h3{
+  font-size: 18px;
+}
 .contact-form .input-box {
   background: #101020;
   border-radius: 10px;
