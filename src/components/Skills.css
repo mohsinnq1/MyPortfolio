@@ -17,7 +17,7 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
   max-width: 1000px;
   margin: auto;
 }
@@ -155,5 +155,79 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 500px;
+}
+}
+@media (max-width: 768px) {
+  .skills-section h2 {
+    margin-top: -120px;
+  font-size: 40px;
+  color: #00aaff;
+}
+.skills-section h3 {
+  font-size: 15px;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.skill-buttons button {
+  margin: 5px;
+  padding: 8px 16px;
+  background: transparent;
+  color: #00aaff;
+  border: 2px solid #00aaff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skill-buttons button:hover {
+  background: #00aaff;
+  color: white;
+}
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+.skill-item {
+  border: 2px solid #615454;
+  border-radius: 8px;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.skill-box h4{
+  font-size: 20px;
+}
+.skill-item img {
+  width: 30px;
+  height:30px;
+  border-radius: 10px;
+  object-fit:cover;
+}
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for stacking vertically */
+    gap: 20px; /* Optional: space between items */
+    max-width: 800px;
+    justify-items: center; /* Optional: center skill-boxes */
+  }
+  .skill-box {
+  background: #101020;
+  padding: 10px;
+  height: 250px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform-style: preserve-3d;
 }
 }

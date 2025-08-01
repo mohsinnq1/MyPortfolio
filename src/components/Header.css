@@ -1,113 +1,323 @@
-
+/* Core Navbar */
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, #0f0f1f, #001f3f);
-  text-align: center;
-  gap: 400px;
-  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  gap: 220px;
   top: 0;
   width: 100%;
+  z-index: 1000;
   box-sizing: border-box;
 }
-@media screen and (max-width: 980px) {
 
-  .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90deg, #0f0f1f, #001f3f);
-  text-align: center;
-  gap: 80px;
-  color: #fff;
-  top: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-.navbar nav ul {
-  list-style: none;
-  display: flex;
-  font-size: 12px;
-  gap: 1px;
-}
-.navbar .logo .white-text {
-  color: #ffffff;
-  font-size: 12px;
-}
-.navbar .logo {
-  font-size: 12px;
-  font-weight: bold;
-  color: #8400ff;
-}
-}
-
-.navbar .logo {
-  font-size: 24px;
+.logo {
+  font-size: 18px;
   font-weight: bold;
   color: #8400ff;
 }
 
-.navbar .logo .white-text {
+.logo .white-text {
   color: #ffffff;
 }
 
-.navbar nav ul {
-  list-style: none;
+/* Desktop Nav */
+.desktop-nav ul {
   display: flex;
-  gap: 10px;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar nav ul li a {
+.desktop-nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 10px;
-  font-weight: bold;
   position: relative;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
-.navbar nav ul li a::after {
+/* Underline on hover */
+.desktop-nav ul li a::after {
   content: '';
   position: absolute;
-  width: 0%;
-  height: 4px;
+  bottom: -2px;
   left: 0;
-  bottom: 0;
-  background: #00aaff;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
   transition: width 0.3s ease;
 }
 
-.navbar nav ul li a:hover::after {
+.desktop-nav ul li a:hover::after {
   width: 100%;
 }
-@media screen and (max-width: 534px) {
 
+/* Hamburger Icon */
+.hamburger {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 200px;
+  background-color: #0f0f1f;
+  padding: 20px;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Transparent Overlay */
+.overlay {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+/* Core Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #0f0f1f, #001f3f);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #8400ff;
+}
+
+.logo .white-text {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Desktop Nav */
+.desktop-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Underline on hover */
+.desktop-nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.desktop-nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 200px;
+  background-color: #0f0f1f;
+  padding: 20px;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Transparent Overlay */
+.overlay {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+/* Base Styles (Desktop >980px handled already) */
+
+/* Mobile styles ≤768px */
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content:space-between;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 220px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: transparent;
+    padding: 30px 20px;
+    z-index: 999;
+    backdrop-filter: blur(2px);
+  }
+
+  .sidebar ul li a {
+    font-weight: bold;
+    position: relative;
+  }
+
+  .sidebar ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+
+  .sidebar ul li a:hover::after {
+    width: 100%;
+  }
+
+  .overlay {
+    top: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+   .desktop-nav {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
   .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, #0f0f1f, #001f3f);
   text-align: center;
-  gap: 2px;
+  gap: 90px;
   color: #fff;
   top: 0;
   width: 100%;
   box-sizing: border-box;
 }
-.navbar nav ul {
-  list-style: none;
-  display: flex;
-  font-size: 5px;
-  gap: 1px;
-}
-.navbar .logo .white-text {
-  color: #ffffff;
-  font-size: 5px;
-}
-.navbar .logo {
-  font-size: 5px;
+
+.logo {
+  font-size: 18px;
   font-weight: bold;
   color: #8400ff;
+}
+
+.logo .white-text {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.desktop-nav ul {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  gap: 20px;
+}
+
+.desktop-nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 }

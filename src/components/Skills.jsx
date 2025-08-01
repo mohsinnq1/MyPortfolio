@@ -1,6 +1,5 @@
 import './Skills.css';
 import { useEffect } from 'react';
-import { FaGamepad } from "react-icons/fa";
 import unity from './unity.png';
 import csharp from './csharp.png';
 import figma from './figma.jpg';
@@ -58,10 +57,6 @@ function Skills() {
       <div className="skill-item">
         <img src={csharp} alt="C#" />
         <span>C#</span>
-      </div>
-      <div className="skill-item">
-        <FaGamepad />
-        <span>Level Design</span>
       </div>
     </div>
   </div>

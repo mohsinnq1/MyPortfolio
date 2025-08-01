@@ -56,7 +56,7 @@ const Projects = () => {
     image: expencetracker,
     duration: 'July-10-2025 - -July-17-2025',
     description: `This desktop application was developed using Java to help users effectively manage and track 
-    their daily, weekly, and monthly expenses. It features a user-friendly GUI built with Java Swing, allowing users to:
+    their daily, weekly, and monthly expenses. It features a user-friendly GUI built with JavaFx, allowing users to:
 . Add, update, and delete income and expense records.
 . Categorize transactions (e.g., food, travel, bills, etc.).
 . View summaries of total spending and income.
@@ -65,7 +65,7 @@ const Projects = () => {
 The app emphasizes simplicity, ease of use, and visual clarity, making it ideal for individuals seeking better control of their personal finances.`,
   gallery: [expencetracker, expencetracker1],
     video: '/uiux-demo.mp4',
-      tools: ['Java', 'Swing', 'MySQL'],
+      tools: ['Java', 'JavaFx', 'MySQL'],
     liveLink: 'https://your-uiux-live-link.com',
     codeLink: 'https://your-uiux-code-link.com',
    },
@@ -117,7 +117,6 @@ The app emphasizes simplicity, ease of use, and visual clarity, making it ideal 
   className="project-thumbnail"
   loading="lazy"
 />
-
               <div className="project-info">
                 <h3>{project.title}</h3>
                 <p>{project.duration}</p>
