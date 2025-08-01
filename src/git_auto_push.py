@@ -25,7 +25,7 @@ def set_remote_url(repo_url):
     print(f"Setting remote origin to: {repo_url}")
     run_command("git remote add origin " + repo_url)
 
-def git_add_commit_push():
+def git_add_commit_push(branch):
     run_command("git add .")
     commit_message = input("Enter commit message: ").strip()
     if not commit_message:
@@ -33,10 +33,10 @@ def git_add_commit_push():
     run_command(f'git commit -m "{commit_message}"')
 
     print("Pulling latest changes (in case of conflicts)...")
-    run_command("git pull origin main --rebase")
+    run_command(f"git pull origin {branch} --rebase")
 
     print("Pushing code to GitHub...")
-    run_command("git push origin main")
+    run_command(f"git push origin {branch}")
 
 def main():
     if not is_git_repo():
@@ -47,7 +47,11 @@ def main():
         repo_url = input("Enter your GitHub repository URL (e.g., https://github.com/username/repo.git): ").strip()
         set_remote_url(repo_url)
 
-    git_add_commit_push()
+    branch = input("Enter your GitHub branch name (e.g., main or master): ").strip()
+    if not branch:
+        branch = "main"
+
+    git_add_commit_push(branch)
 
 if __name__ == "__main__":
     main()
