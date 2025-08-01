@@ -54,6 +54,10 @@
 #bubbles-container {
   position: fixed;
   width: 100%;
+@media (max-width:534px ) {
+#bubbles-container {
+  position: fixed;
+  width: 400px;
   height: 100%;
   top: 0;
   left: 0;
@@ -70,4 +74,4 @@
   opacity: 0.5;
   max-width: 100%;
 }
-}
+}}}

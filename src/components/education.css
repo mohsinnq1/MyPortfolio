@@ -345,6 +345,7 @@
   transform: translateX(-50%);
 }
 
+@media (max-width: 534px) {
 .education-content-image {
   width: 20px;
   height: 20px;
@@ -364,6 +365,7 @@
   margin: 0;
   text-align: left;
   font-size: 12px !important;
+  font-size: 8px;
 }
 
 .education-content-info .degree {
@@ -371,6 +373,7 @@
   font-weight: bold;
   text-align: left;
   font-size: 15px;
+  font-size: 12px;
   margin-top: 5px;
 }
 
@@ -379,6 +382,7 @@
   text-align: left;
   color: #888;
   font-size: 12px !important;
+  font-size: 8px;
   margin-top: 2px;
   font-weight: bold;
 }
@@ -476,5 +480,50 @@
 
   .education-center-section h3 {
     font-size: 20px;
+  font-size: 4px;
+  line-height: 1.5;
+  text-align: left;
+}
+  .education-center-dot {
+    transform: translateY(-270%) translateX(1%);
   }
+
+  .education-center-item.up .education-center-content {
+    position: absolute;
+    right: calc(20% + 150px);
+    bottom: 0;
+    transform: translateY(-10%);
+  }
+
+  .education-center-item.down .education-center-content {
+    position: absolute;
+    left: calc(23% + 150px);
+    top: 0;
+    transform: translateY(-80%);
+  }
+
+  .education-center-content {
+    min-width: 100px;
+    height: 200px;
+    position: relative;
+  }
+
+  .arrow-left {
+    right:10px;
+    transform: translateY(30%);
+  }
+
+  .arrow-right {
+    left: 178px;
+    transform: translateY(50%);
+  }
+
+  .experience-center-section h2 {
+    font-size: 12px;
+  }
+
+  .experience-center-section h3 {
+    font-size: 5px;
+  }
+}
 }

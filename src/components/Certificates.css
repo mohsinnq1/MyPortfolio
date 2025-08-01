@@ -235,6 +235,14 @@
 
 .bi-btn-4 a {
   padding: 10px 30px;
+@media (max-width: 534px ) {
+  
+.bi-btn-4 {
+  margin-top: 250px;
+}
+
+.bi-btn-4 a {
+  padding: 5px 10px;
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(255, 255, 255, 0.05);
@@ -292,9 +300,28 @@
 .certificate-img img {
   width: 100%;
   height: 400px;
+.certificate-card {
+  width: 200px;
+  border-radius: 15px;
+  transition: 0.3s;
+  margin-bottom: -220px;
+}
+.certificate-img img {
+  width: 100%;
+  height: 200px;
   border-radius: 40px;
   object-fit: cover;
   display: block;
   margin: auto;
 }
 }
+.certificate-card.left {
+  align-self: flex-start;
+  margin-left: 200px;
+}
+
+.certificate-card.right {
+  align-self: flex-end;
+  margin-right: 200px;
+}
+}}}
