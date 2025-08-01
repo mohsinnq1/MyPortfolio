@@ -33,7 +33,7 @@ def git_add_commit_push(branch):
     run_command(f'git commit -m "{commit_message}"')
 
     print("Pulling latest changes (in case of conflicts)...")
-    run_command(f"git pull origin {branch} --rebase")
+    run_command(f"git pull origin {branch}")
 
     print("Pushing code to GitHub...")
     run_command(f"git push origin {branch}")

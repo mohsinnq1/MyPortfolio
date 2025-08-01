@@ -395,7 +395,6 @@ left: 70px;
     align-items: center; /* optional: center align */
     gap: 20px;
 }
-
 .about-buttons button {
   width: 100%;
   max-width: 400px; 
