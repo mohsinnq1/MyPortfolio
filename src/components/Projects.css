@@ -441,7 +441,7 @@
   max-height: 60px;  
 }
   .project-filters button {
-  padding: 8px 20px; /* smaller padding */
+  padding: 6px 10px;  /* smaller padding */
   font-size: 6px; 
 }
   .project-info p {
