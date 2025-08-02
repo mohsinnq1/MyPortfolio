@@ -287,7 +287,7 @@
     text-align: center;
     background: linear-gradient(90deg, #0f0f1f, #001f3f);
     padding: 100px 20px;
-    height: 1500px;
+    height: 1900px;
     color: white;
   }
 
@@ -428,7 +428,7 @@
   position: absolute;
   left: calc(20% + 30px);
   width: 200px;
-  height: 400px;
+  height: 500px;
   transform: translateY(-80%) translateX(-10px);
   padding: 10px;
   border-radius: 10px;
@@ -443,7 +443,7 @@
   position: absolute;
   left: calc(20% + 30px);
   width: 200px;
-  height: 400px;
+  height: 500px;
   top: 250px; /* Push second block down */
   transform: translateY(70%) translateX(-10px);
   padding: 10px;
@@ -459,7 +459,7 @@
   position: absolute;
   left: calc(20% + 30px);
   width: 200px;
-  height: 400px;
+  height: 500px;
   top: 550px; /* Push third block even further down */
   transform: translateY(105%) translateX(-10px);
   padding: 10px;
