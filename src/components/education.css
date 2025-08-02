@@ -427,7 +427,7 @@
   top: 380px;
   position: absolute;
   left: calc(20% + 30px);
-  width: 250px;
+  width: 200px;
   height: 400px;
   transform: translateY(-80%) translateX(-10px);
   padding: 10px;
@@ -442,7 +442,7 @@
   margin: 100px 0;
   position: absolute;
   left: calc(20% + 30px);
-  width: 250px;
+  width: 200px;
   height: 400px;
   top: 250px; /* Push second block down */
   transform: translateY(70%) translateX(-10px);
@@ -458,7 +458,7 @@
   margin: 100px 0;
   position: absolute;
   left: calc(20% + 30px);
-  width: 250px;
+  width: 200px;
   height: 400px;
   top: 550px; /* Push third block even further down */
   transform: translateY(105%) translateX(-10px);
