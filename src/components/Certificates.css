@@ -273,14 +273,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1850px;
+  height: 1700px;
 }
 
 .certificate-card {
-  width: 80%;
-  width: 350px;               /* Responsive width */
-  margin: 20px 0;           /* Vertical spacing */
-  align-self: center;       /* Ensures horizontal centering */
+  width: 300px; 
+  height: 250px;
+  margin: 120px 0;
+  align-self: center;
 }
 
 .certificate-card.left,
@@ -289,9 +289,13 @@
   margin-right: 0;
   align-self: center;       /* Override side alignment */
 }
+.certificate-text{
+  transform: translateY(-100px);
+}
 .certificate-img img {
   width: 100%;
-  height: 400px;
+  height: 300px;
+  transform: translateY(-80px);
   border-radius: 40px;
   object-fit: cover;
   display: block;
