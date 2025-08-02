@@ -278,7 +278,7 @@
 
 .certificate-card {
   width: 80%;
-  width: 400px;               /* Responsive width */
+  width: 350px;               /* Responsive width */
   margin: 20px 0;           /* Vertical spacing */
   align-self: center;       /* Ensures horizontal centering */
 }
