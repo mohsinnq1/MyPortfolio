@@ -297,16 +297,6 @@
     gap: 60px; /* space between items */
     position: relative;
   }
-
-  .education-center-content {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
     .education-center-wrapper:not(.education-mobile) {
     display: none !important;
   }
@@ -384,12 +374,12 @@
 }
   .desc {
   font-size: 12px !important;
-  line-height: 1;
+  line-height: 1.5;
   text-align: left;
 }
   .education-center-dot-first {
-    width: 60px;
-  height: 60px;
+    width: 40px;
+  height: 40px;
   background: #0f0f1f;
   border: 3px solid #00aaff;
   border-radius: 50%;
@@ -403,8 +393,8 @@
     transform: translateY(28%) translateX(-185px);
   }
     .education-center-dot-second {
-       width: 60px;
-  height: 60px;
+       width: 40px;
+  height: 40px;
   background: #0f0f1f;
   border: 3px solid #00aaff;
   border-radius: 50%;
@@ -415,11 +405,11 @@
   position: relative;
   z-index: 2;
   overflow: hidden;
-    transform: translateY(490%) translateX(-185px);
+    transform: translateY(690%) translateX(-185px);
   }
     .education-center-dot-third {
-       width: 60px;
-  height: 60px;
+       width: 40px;
+  height: 40px;
   background: #0f0f1f;
   border: 3px solid #00aaff;
   border-radius: 50%;
@@ -430,42 +420,41 @@
   position: relative;
   z-index: 2;
   overflow: hidden;
-    transform: translateY(950%) translateX(-185px);
+    transform: translateY(1390%) translateX(-185px);
   }
 
 .education-center-first .education-center-content {
-  margin-top: 150px;
-  margin: 100px 0;
+  margin: 82px 0;
   top: 380px;
   position: absolute;
-  left: calc(20% + 40px);
-  width: 300px;
+  left: calc(20% + 30px);
+  width: 250px;
   height: 300px;
-  transform: translateY(-80%) translateX(-30px);
+  transform: translateY(-80%) translateX(-40px);
 }
 
 .education-center-second .education-center-content {
   margin: 100px 0;
   position: absolute;
-  left: calc(20% + 40px);
-  width: 300px;
+  left: calc(20% + 30px);
+  width: 200px;
   height: 300px;
   top: 250px; /* Push second block down */
-  transform: translateY(65%) translateX(-30px);
+  transform: translateY(65%) translateX(-40px);
 }
 
 .education-center-third .education-center-content {
   margin: 100px 0;
   position: absolute;
-  left: calc(20% + 40px);
-  width: 300px;
+  left: calc(20% + 30px);
+  width: 200px;
   height: 300px;
   top: 550px; /* Push third block even further down */
-  transform: translateY(85%) translateX(-30px);
+  transform: translateY(85%) translateX(-40px);
 }
 
 .arrow-left {
-  left: -20px;
+  left: -15px;
   right: auto;
 }
 
