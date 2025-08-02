@@ -97,14 +97,9 @@ function Education() {
       </div>
       {/*Mobile*/}
       <div className="education-mobile">
-        <div className="education-center-line"></div>
         {/* Matriculation */}
-        <div className="education-center-first">
-          <div className="education-center-dot-first">
-            <img src={MATRICBOARD} alt="Matriculation" />
-          </div>
-          <div className="education-center-content">
-            <div className="arrow-left"></div>
+        <div className="education-center-first" style={{width: '100%'}}>
+          <div className="education-center-content-first">
             <div className="education-content-header">
               <div className="education-content-image">
                 <img src={MATRICBOARD} alt="Matriculation Logo" />
@@ -127,12 +122,7 @@ function Education() {
 
         {/* Intermediate */}
         <div className="education-center-second">
-          <div className="education-center-dot-second">
-            <img src={Hydlogo} alt="Intermediate" />
-          </div>
-          <div className="education-center-content">
-             <div className="arrow-left"></div>
-            <div className="arrow-right"></div>
+          <div className="education-center-content-second">
             <div className="education-content-header">
               <div className="education-content-image">
                 <img src={Hydlogo} alt="Intermediate Logo" />
@@ -155,11 +145,7 @@ function Education() {
 
         {/* Bachelor's */}
         <div className="education-center-third">
-          <div className="education-center-dot-third">
-            <img src={iqralogo} alt="Bachelor" />
-          </div>
-          <div className="education-center-content">
-            <div className="arrow-left"></div>
+          <div className="education-center-content-third">
             <div className="education-content-header">
               <div className="education-content-image">
                 <img src={iqralogo} alt="Iqra University Logo" />
