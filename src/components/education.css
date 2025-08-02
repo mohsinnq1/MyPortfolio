@@ -371,7 +371,7 @@
   margin: 152px 0;
   top: 380px;
   position: absolute;
-  left: calc(5% + 20px);
+  left: 0;
   width: 300px;
   height: 400px;
   transform: translateY(-60%) translateX(40px);
@@ -386,7 +386,7 @@
   background: #101020;
   margin: 100px 0;
   position: absolute;
-  left: calc(5% + 20px);
+  left:0;
   width: 300px;
   height: 400px;
   top: 250px; /* Push second block down */
@@ -402,7 +402,7 @@
   background: #101020;
   margin: 100px 0;
   position: absolute;
-  left: calc(5% + 20px);
+  left: 0;
   width: 300px;
   height: 450px;
   top: 550px; /* Push third block even further down */
