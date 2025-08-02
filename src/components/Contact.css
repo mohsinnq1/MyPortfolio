@@ -359,7 +359,7 @@
   background: #101020;
   padding: 30px;
   border-radius: 15px;
-  width: 300px;
+  width: 250px;
   max-width: 100%;
   margin: auto;
   box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
@@ -382,7 +382,7 @@
 
 .contact-form .input-box input,
 .contact-form .input-box textarea {
-  width: 250px;
+  width: 200px;
   background: transparent;
   border: none;
   border-bottom: 2px solid #00aaff;
