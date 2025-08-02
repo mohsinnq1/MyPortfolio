@@ -71,14 +71,8 @@ function Experience() {
       </div>
       {/*Mobile*/}
       <div className="experience-mobile">
-        <div className="experience-center-line"></div>
-
         <div className="experience-center-first">
-          <div className="experience-center-dot-first">
-            <img src={blossom} alt="Game Development Internship" />
-          </div>
           <div className="experience-center-content">
-                <div className="arrow-left"></div>
             <div className="experience-content-header">
               <div className="experience-content-image">
                 <img src={blossom} alt="Matric" />
@@ -101,11 +95,7 @@ function Experience() {
         </div>
 
         <div className="experience-center-second">
-          <div className="experience-center-dot-second">
-            <img src={youngdev} alt="Cybersecurity Internship" />
-          </div>
           <div className="experience-center-content">
-                <div className="arrow-left"></div>
             <div className="experience-content-header">
               <div className="experience-content-image">
                 <img src={youngdev} alt="Matric" />
