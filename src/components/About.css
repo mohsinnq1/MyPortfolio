@@ -317,95 +317,6 @@ left: 70px;
   width: 100%; /* full width */
   max-width: 1200px;
   padding: 0 150px;
-<<<<<<< HEAD
-}
-
-
-.about-mobile {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  
-.about-image-wrapper.mobile::after {
-  display: none !important;
-  content: none !important;
-}
-.about-image-wrapper.mobile::before {
-  display: none !important;
-  content: none !important;
-}
-.about-desktop {
-    display: none;
-  }
-
-  .about-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 100px 50px 1px; 
-  }
-
-  .about-image-wrapper.mobile {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  margin-bottom: 20px;
-}
-
-.water-circle {
-  position: absolute;
-  top: 12px;
-  left: 6px;
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
-  background: radial-gradient(circle at center, rgba(0, 170, 255, 0.2) 20%, transparent 70%),
-              conic-gradient(from 0deg, #00aaff 10%, transparent 30%, #00ffff 50%, transparent 70%, #00aaff 90%);
-  animation: waterFlow 6s linear infinite;
-  filter: blur(5px);
-  opacity: 0.7;
-  z-index: 0;
-}
-
-
-/* Static image in center */
-.about-image-circle {
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.about-image-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 50%;
-}
-.about-buttons {
-  margin-top: 20px; 
-   display: flex;
-    flex-direction: column;
-    align-items: center; /* optional: center align */
-    gap: 20px;
-}
-.about-buttons button {
-  width: 100%;
-  max-width: 400px; 
-  padding: 20px 80px;
-  border-radius: 80px;
-@media (max-width: 534px ) {
-  .about-content h3 {
-  font-size: 12px;
-=======
->>>>>>> 82f1ab8 (Updated files)
 }
 
 
@@ -527,11 +438,6 @@ left: 70px;
   background: linear-gradient(90deg,  #000000, #8b8b8b, #08171f);
   background-size: 400% 100%;
   font-size: 25px;
-<<<<<<< HEAD
-  background-clip: text;
-  white-space: nowrap;
-=======
->>>>>>> 82f1ab8 (Updated files)
   background-clip: text;
   white-space: nowrap;
   -webkit-background-clip: text;
@@ -546,7 +452,6 @@ left: 70px;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-<<<<<<< HEAD
 }
 
 .about-mobile-text h2 {
@@ -594,71 +499,3 @@ left: 70px;
     transform: rotate(360deg) scale(1);
   }
 }
-.about-image-wrapper::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 60px;
-  width: 500px;
-  height: 90px; /* control curve height */
-  background: #f1f1f1;
-  border: 20px solid #918284;
-  border-right: none;               /* remove right border */
-  border-top-right-radius: 0;      /* remove right top curve */
-  border-bottom-right-radius: 0;   /* remove right bottom curve */
-  border-radius: 310px 0 0 310px; 
-  background: #011627;
-  z-index: -1;
-=======
->>>>>>> 82f1ab8 (Updated files)
-}
-
-.about-mobile-text h2 {
-  font-size: 40px;
-  margin: 0;
-  line-height: 1.2;
-  color: #ffffff;
-}
-
-.about-mobile-text .name-line {
-  font-size: 40px;
-  margin: 4px 0 10px;
-  white-space: nowrap;
-  color: #ffffff;
-}
-
-.about-mobile-text h3 {
-  font-size: 25px;
-  margin: 8px 0;
-  color: #ffffff;
-  white-space: nowrap;
-}
-.about-mobile-text span {
-  margin-top: 10px;
-  font-size: 24px;
-  color: #494f8b;
-}
-.about-mobile h4{
-    font-size: 17px;
-  color: #bbbbbb;
-  line-height: 1.6;
-  white-space: normal;
-  word-break: break-word;
-   margin-top: 5px;
-}
-}
-@keyframes waterFlow {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(180deg) scale(1.03);
-  }
-  100% {
-    transform: rotate(360deg) scale(1);
-  }
-}
-<<<<<<< HEAD
-}}
-=======
->>>>>>> 82f1ab8 (Updated files)
