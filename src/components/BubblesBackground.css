@@ -51,13 +51,6 @@
 }
 }
 @media (max-width:768px ) {
-<<<<<<< HEAD
-#bubbles-container {
-  position: fixed;
-  width: 100%;
-@media (max-width:534px ) {
-=======
->>>>>>> 82f1ab8 (Updated files)
 #bubbles-container {
   position: fixed;
   width: 100%;
@@ -77,4 +70,4 @@
   opacity: 0.5;
   max-width: 100%;
 }
-}}}
+}
