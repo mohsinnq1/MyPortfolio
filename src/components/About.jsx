@@ -1,121 +1,190 @@
-import './About.css'
-import { useEffect, useState, useMemo } from 'react';
-import BluebgFormal from './BluebgFormal.jpg';
+import { useState } from 'react';
+import './Projects.css';
+import TuneCrate from './TuneCrate.png';
+import Home from './Home.png';
+import explore from './explore.png';
+import miniplayer from './miniplayer.png';
+import expencetracker from './expencetracker.png';
+import expencetracker1 from './expencepage1.png';
+import musicplayer from './musicplayer.png';
+import explorepage from './explorepage.png';
+import homepage from './homepage.png';
+import tuncratemobile from './TuneCrate Mobile App.mp4';
+import expencetracker from './Expencetracker.mp4';
 
-function About() {
-  const roles = useMemo(() => ["UI/UX Designer", "Game Developer", "Android App Developer", "Programmer"], []);
-  const [text, setText] = useState('');
-  const [index, setIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-useEffect(() => {
-  const handleResize = () => {
-    console.log("Window width:", window.innerWidth);
+const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+ const [filter, setFilter] = useState('All');
+  const projects = [
+  {
+    id: 1,
+    title: 'Android App',
+    category: 'Android',
+    image: homepage,
+    duration: 'June 2025 - July 2025',
+      description: `TuneCrate is a Flutter-based music streaming mobile app that allows users 
+    to manage and explore playlists with a responsive and intuitive UI. The Playlist Page 
+    showcases user-created or auto-generated playlists with song metadata and smooth 
+    navigation. Designed with efficient rendering using ListView.builder, it ensures 
+    dynamic loading, seamless transitions, and optimized performance for various
+    screen sizes.`,
+    gallery: [homepage, musicplayer, explorepage],
+    video: tuncratemobile,
+      tools: ['Flutter', 'Dart', 'Firebase'],
+  },
+  {
+    id: 2,
+    title: 'UI/UX Design',
+    category: 'UI/UX',
+    image: TuneCrate,
+    duration: 'May-25-2025 - May-28-2025',
+    description: `Designed a modern and responsive user interface for a music streaming application using Figma.
+    The design process included user research, wireframing, and prototyping. Focused on creating a 
+    clean, intuitive layout with consistent visual hierarchy, smooth navigation, 
+    and engaging user interactions to enhance usability and overall user experience. 
+    Key screens include Home, Explore, and Miniplayer, each optimized 
+    for both aesthetics and functionality.`,
+  gallery: [Home, explore, miniplayer],
+      tools: ['Figma', 'UX Research'],
+  },
+  {
+    id: 3,
+    title: 'Personal Expence Tracker',
+    category: 'JAVA',
+    image: expencetracker,
+    duration: 'July-10-2025 - -July-17-2025',
+    description: `This desktop application was developed using Java to help users effectively manage and track 
+    their daily, weekly, and monthly expenses. It features a user-friendly GUI built with JavaFx, allowing users to:
+. Add, update, and delete income and expense records.
+. Categorize transactions (e.g., food, travel, bills, etc.).
+. View summaries of total spending and income.
+. Generate reports for financial analysis.
+. Store data locally using file handling or a connected database (e.g., MySQL or SQLite).
+The app emphasizes simplicity, ease of use, and visual clarity, making it ideal for individuals seeking better control of their personal finances.`,
+  gallery: [expencetracker, expencetracker1],
+    video: expencetracker,
+      tools: ['Java', 'JavaFx', 'MySQL'],
+   },
+  ];
+
+ const openModal = (project) => {
+    setSelectedProject(project);
+    setCurrentSlide(0);
   };
 
-  window.addEventListener('resize', handleResize);
-  handleResize(); // Log immediately on mount
+  const closeModal = () => setSelectedProject(null);
 
-  return () => window.removeEventListener('resize', handleResize);
-}, []);
-  useEffect(() => {
-    
-    const current = roles[index % roles.length];
-    const interval = setInterval(() => {
-      if (isDeleting) {
-        setText(current.substring(0, text.length - 1));
-      } else {
-        setText(current.substring(0, text.length + 1));
-      }
+  const nextSlide = () => {
+    if (!selectedProject) return;
+    const totalSlides = selectedProject.gallery.length + (selectedProject.video ? 1 : 0);
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
 
-      if (!isDeleting && text === current) {
-        setTimeout(() => setIsDeleting(true), 1000);
-      } else if (isDeleting && text === '') {
-        setIsDeleting(false);
-        setIndex((prev) => prev + 1);
-      }
-    }, 150);
-
-    return () => clearInterval(interval);
-    
-  }, [text, isDeleting, index, roles]);
+  const prevSlide = () => {
+    if (!selectedProject) return;
+    const totalSlides = selectedProject.gallery.length + (selectedProject.video ? 1 : 0);
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
 
   return (
-   <section id="about" className="about-section">
+     <section id="project" className="skills-section">
+    <div className="projects-container">
+      <h2 className="projects-heading">My Projects</h2>
 
-  {/* ✅ Desktop View */}
-  <div className="about-desktop">
-    <div className="about-content">
-      <h2>Hi, I am<br />Mohsin Nawaz</h2>
-      <h3>
-        I am a <span className="typed-text">{text}</span>
-        <span className="cursor">|</span>
-      </h3>
-      <h4>
-        I am a motivated and versatile individual, always<br />
-        eager to take on new challenges. With a passion for<br />
-        Game development, Mobile App development,<br />
-        UI/UX design, and Cybersecurity, I am dedicated to<br />
-        delivering high-quality results.
-        With a positive attitude<br /> and a growth mindset,
-        I am ready to contribute my skills,<br /> learn continuously,
-        and achieve impactful outcomes in<br /> every project I take on.
-      </h4>
-      <div className="about-buttons">
-        <a href="https://drive.google.com/file/d/1LaEug4HrgltDA32HP0LLnvRDZi64lalz/view?usp=sharing" target="_blank" rel="noreferrer">
-          <button><span>Resume</span></button>
-        </a>
-        <a href="https://github.com/mohsinnq1" target="_blank" rel="noreferrer">
-          <button><span>GitHub Profile</span></button>
-        </a>
+    <div className="project-filters">
+  {['All','Android', 'UI/UX', 'JAVA'].map((cat) => (
+    <button
+      key={cat}
+      onClick={() => setFilter(cat)}
+      className={filter === cat ? 'active' : ''}
+    >
+      <span>{cat} Projects</span>
+    </button>
+  ))}
+</div>
+      <div className="projects-grid">
+        {projects
+          .filter((project) => filter === 'All' || project.category === filter)
+          .map((project, index) => (
+            <div key={index} className="project-card" onClick={() => openModal(project)}>
+              <img
+              src={project.image}
+  alt={project.title}
+  className="project-thumbnail"
+  loading="lazy"
+/>
+              <div className="project-info">
+                <h3>{project.title}</h3>
+                <p>{project.duration}</p>
+                <div className="project-tools" style={{ marginTop: '15px' }}>
+                  {project.tools &&
+                    project.tools.map((tool, idx) => (
+                      <span key={idx} className="tool-button">
+                        <span>{tool}</span>
+                      </span>
+                    ))}
+                </div>
+                <div className="project-description">{project.description}</div>
+              </div>
+            </div>
+          ))}
       </div>
-    </div>
+      {selectedProject && (
+        <div className="modal" onClick={closeModal}>
+          <div className="carousel" onClick={(e) => e.stopPropagation()}>
+            <span className="close-button" onClick={closeModal}>
+              &times;
+            </span>
 
-    <div className="about-image-wrapper">
-      <div className="about-image-circle">
-        <img src={BluebgFormal} alt="Mohsin Nawaz" />
-        <div className="about-image-tail"></div>
-      </div>
-    </div>
-  </div>
+            <div className="carousel-content">
+              {currentSlide < selectedProject.gallery.length ? (
+                <img
+                  src={selectedProject.gallery[currentSlide]}
+                  alt="Project Slide"
+                  className="carousel-image"
+                />
+              ) : selectedProject.video ? (
+                <video className="carousel-image" controls>
+                  <source src={selectedProject.video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : null}
+            </div>
 
-  {/* ✅ Mobile View */}
-  <div className="about-mobile">
-    <div className="about-image-wrapper mobile">
-    <div className="water-circle"> </div>
-      <div className="about-image-circle">
-      <img src={BluebgFormal} alt="Mohsin Nawaz" />
-    </div>
-    </div>
-      <div class="about-mobile-text">
-      <h2>Hi, I am</h2>
-       <h2 class="name-line">Mohsin Nawaz</h2>
-      <h3>
-        I am a <span className="typed-text">{text}</span>
-        <span className="cursor">|</span>
-      </h3>
-      </div>
-      <h4>
-        I am a motivated and versatile individual,<br />
-        always eager to take on new challenges.<br />
-         With a passion for Game development,<br />
-         Mobile App development, UI/UX design,<br />
-        Cybersecurity, I am dedicated to delivering<br /> 
-        high-quality results. With apositive<br /> 
-        positive attitude and a growth mindset, I<br /> 
-        am ready to learn continuously, contribute<br />my skills, and achieve impactful outcomes <br />in every project I take on.
-      </h4>
-      <div className="about-buttons">
-        <a href="https://drive.google.com/file/d/1apy8KMqqOhUJed1cnYc_wu1notQE7MrP/view?usp=sharing" target="_blank" rel="noreferrer">
-          <button><span>Resume</span></button>
-        </a>
-        <a href="https://github.com/mohsinnq1" target="_blank" rel="noreferrer">
-          <button><span>GitHub Profile</span></button>
-        </a>
-      </div>
-    </div>
-</section>
+            {(selectedProject.gallery.length > 1 || selectedProject.video) && (
+              <>
+                <button className="nav-button" onClick={prevSlide}>
+                  &#10094;
+                </button>
+                <button className="nav-button" onClick={nextSlide}>
+                  &#10095;
+                </button>
+              </>
+            )}
 
+            <h3 style={{ color: "#b4b4b4;", marginBottom: '10px' }}>
+              {selectedProject.title} -{' '}
+            </h3>
+<span style={{ color: "#b4b4b4", fontWeight: "normal" }}>
+                {selectedProject.duration}
+              </span>
+            <div className="project-tools" style={{ marginTop: '15px' }}>
+              {selectedProject.tools?.map((tool, idx) => (
+                <span key={idx} className="tool-button">
+                  <span>{tool}</span>
+                </span>
+              ))}
+            </div>
+
+           <p className="project-description full">{selectedProject.description}</p>
+
+          </div>
+        </div>
+      )}
+    </div>
+    </section>
   );
-}
+};
 
-export default About;
+export default Projects;
