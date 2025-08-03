@@ -10,7 +10,7 @@ import musicplayer from './musicplayer.png';
 import explorepage from './explorepage.png';
 import homepage from './homepage.png';
 import tuncratemobile from './TuneCrate Mobile App.mp4';
-import expencetracker from './Expencetracker.mp4';
+import expencetrackervedio from './Expencetracker.mp4';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -63,7 +63,7 @@ const Projects = () => {
 . Store data locally using file handling or a connected database (e.g., MySQL or SQLite).
 The app emphasizes simplicity, ease of use, and visual clarity, making it ideal for individuals seeking better control of their personal finances.`,
   gallery: [expencetracker, expencetracker1],
-    video: expencetracker,
+    video: expencetrackervedio,
       tools: ['Java', 'JavaFx', 'MySQL'],
    },
   ];
