@@ -10,6 +10,7 @@ import musicplayer from './musicplayer.png';
 import explorepage from './explorepage.png';
 import homepage from './homepage.png';
 import tuncratemobile from './TuneCrate Mobile App.mp4';
+import expencetracker from './Expencetracker.mp4';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -31,8 +32,6 @@ const Projects = () => {
     gallery: [homepage, musicplayer, explorepage],
     video: tuncratemobile,
       tools: ['Flutter', 'Dart', 'Firebase'],
-    liveLink: 'https://your-android-live-link.com',
-    codeLink: 'https://your-android-code-link.com',
   },
   {
     id: 2,
@@ -64,10 +63,8 @@ const Projects = () => {
 . Store data locally using file handling or a connected database (e.g., MySQL or SQLite).
 The app emphasizes simplicity, ease of use, and visual clarity, making it ideal for individuals seeking better control of their personal finances.`,
   gallery: [expencetracker, expencetracker1],
-    video: '/uiux-demo.mp4',
+    video: expencetracker,
       tools: ['Java', 'JavaFx', 'MySQL'],
-    liveLink: 'https://your-uiux-live-link.com',
-    codeLink: 'https://your-uiux-code-link.com',
    },
   ];
 
