@@ -58,7 +58,7 @@ useEffect(() => {
   building a career in this field. At the same time, I bring <br />
   hands-on experience in Game Development, Mobile App <br />
   Development, and UI/UX Design, which enhance my technical <br />
-  and creative problem-solving skills. <br /><br />
+  and creative problem-solving skills.<br/>
   With a positive attitude and a growth mindset, <br />
   I am committed to learning continuously, contributing <br />
   effectively, and achieving impactful outcomes in <br />
