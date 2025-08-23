@@ -58,10 +58,10 @@ useEffect(() => {
   building a career in this field. At the same time, I bring <br />
   hands-on experience in Game Development, Mobile App <br />
   Development, and UI/UX Design, which enhance my technical <br />
-  and creative problem-solving skills.<br/>
-  With a positive attitude and a growth mindset, <br />
-  I am committed to learning continuously, contributing <br />
-  effectively, and achieving impactful outcomes in <br />
+  and creative problem-solving skills. With a positive <br/>
+  attitude and a growth mindset, I am committed to <br />
+   learning continuously, contributing effectively, and <br />
+  achieving impactful outcomes in <br />
   every project I take on.
       </h4>
       <div className="about-buttons">
@@ -99,17 +99,17 @@ useEffect(() => {
       </h3>
       </div>
       <h4>
-         I am a motivated and versatile individual, always <br />
+        I am a motivated and versatile individual, always <br />
   eager to take on new challenges. With a strong interest in <br />
   Cybersecurity—particularly Defensive Security, Blue Team <br />
   operations, Cloud Security, and IAM—I am working towards <br />
   building a career in this field. At the same time, I bring <br />
   hands-on experience in Game Development, Mobile App <br />
   Development, and UI/UX Design, which enhance my technical <br />
-  and creative problem-solving skills. <br /><br />
-  With a positive attitude and a growth mindset, <br />
-  I am committed to learning continuously, contributing <br />
-  effectively, and achieving impactful outcomes in <br />
+  and creative problem-solving skills. With a positive <br/>
+  attitude and a growth mindset, I am committed to <br />
+   learning continuously, contributing effectively, and <br />
+  achieving impactful outcomes in <br />
   every project I take on.
       </h4>
       <div className="about-buttons">
