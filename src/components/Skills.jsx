@@ -17,10 +17,10 @@ import bash from './bash.png';
 import nmap from './nmap.jpg';
 import wireshark from './python.jpg';
 import burpsuite from './burpsuite.jpg';
-import wazuh from './wazuh.jpg';
+import wazuh from './wazuh.png';
 import suricata from './Suricata.jpg';
 import metasploit from './metasploit.jpg';
-import openvas from './Openvas.jpg';
+import openvas from './Openvas.png';
 
 function Skills() {
   useEffect(() => {
