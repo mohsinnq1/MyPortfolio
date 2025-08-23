@@ -17,6 +17,10 @@ import bash from './bash.png';
 import nmap from './nmap.jpg';
 import wireshark from './python.jpg';
 import burpsuite from './burpsuite.jpg';
+import wazuh from './wazuh.jpg';
+import suricata from './Suricata.jpg';
+import metasploit from './metasploit.jpg';
+import openvas from './Openvas.jpg';
 
 function Skills() {
   useEffect(() => {
@@ -47,6 +51,39 @@ function Skills() {
       <h3>“I have developed a diverse skill set through education, experience, and continuous learning. My core skills include the following.”</h3>
 
       <div className="skills-grid">
+        <div className="skill-box">
+    <h4>Cybersecurity Tools</h4>
+    <div className="skill-items">
+      <div className="skill-item">
+        <img src={wireshark} alt="wireshark" />
+        <span>Wireshark</span>
+      </div>
+      <div className="skill-item">
+        <img src={nmap} alt="nmap" />
+        <span>Nmap</span>
+      </div>
+      <div className="skill-item">
+        <img src={burpsuite} alt="Burp Suite" />
+        <span>Burp Suite</span>
+      </div>
+      <div className="skill-item">
+        <img src={wazuh} alt="Wazuh" />
+        <span>Wazuh</span>
+      </div>
+      <div className="skill-item">
+        <img src={suricata} alt="Suricata" />
+        <span>Suricata</span>
+      </div>
+      <div className="skill-item">
+        <img src={metasploit} alt="Metasploit" />
+        <span>Metasploit Framework</span>
+      </div>
+      <div className="skill-item">
+        <img src={openvas} alt="OpenVAS" />
+        <span>OpenVAS</span>
+      </div>
+    </div>
+  </div>
         <div className="skill-box">
     <h4>Game Development</h4>
     <div className="skill-items">
@@ -92,23 +129,6 @@ function Skills() {
       <div className="skill-item">
         <img src={java} alt="Java" />
         <span>JAVA</span>
-      </div>
-    </div>
-  </div>
-<div className="skill-box">
-    <h4>Cybersecurity Tools</h4>
-    <div className="skill-items">
-      <div className="skill-item">
-        <img src={wireshark} alt="wireshark" />
-        <span>Wireshark</span>
-      </div>
-      <div className="skill-item">
-        <img src={nmap} alt="nmap" />
-        <span>Nmap</span>
-      </div>
-      <div className="skill-item">
-        <img src={burpsuite} alt="Burp Suite" />
-        <span>Burp Suite</span>
       </div>
     </div>
   </div>
