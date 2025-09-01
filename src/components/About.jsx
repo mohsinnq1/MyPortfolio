@@ -65,7 +65,7 @@ useEffect(() => {
   every project I take on.
       </h4>
       <div className="about-buttons">
-        <a href="https://drive.google.com/file/d/1LaEug4HrgltDA32HP0LLnvRDZi64lalz/view?usp=sharing" target="_blank" rel="noreferrer">
+        <a href="https://drive.google.com/file/d/1AAbEV5jNvzwlpi7yDVhatBZRu-ik_w6Z/view?usp=sharing" target="_blank" rel="noreferrer">
           <button><span>Resume</span></button>
         </a>
         <a href="https://github.com/mohsinnq1" target="_blank" rel="noreferrer">
@@ -113,7 +113,7 @@ useEffect(() => {
   every project I take on.
       </h4>
       <div className="about-buttons">
-        <a href="https://drive.google.com/file/d/1LaEug4HrgltDA32HP0LLnvRDZi64lalz/view?usp=sharing" target="_blank" rel="noreferrer">
+        <a href="https://drive.google.com/file/d/1AAbEV5jNvzwlpi7yDVhatBZRu-ik_w6Z/view?usp=sharing" target="_blank" rel="noreferrer">
           <button><span>Resume</span></button>
         </a>
         <a href="https://github.com/mohsinnq1" target="_blank" rel="noreferrer">
