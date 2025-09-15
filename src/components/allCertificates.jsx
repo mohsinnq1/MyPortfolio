@@ -11,11 +11,11 @@ import intrtocloud from './intro-tocloud.png';
 
 const certificatesData = [
   { id: 1, title: 'AWS Cloud Practitioner', category: 'Cloud Certification', image: AWSCloud, Date: 'Feb 2025', description: 'This certification validates AWS Cloud knowledge and skills.' },
-  { id: 2, title: 'Microsoft Azure: AZ-900 AZ-104 and AZ-305', category: 'Cloud Certification', image: azurecloud, Date: 'Feb 2022', description: 'Comprehensive training on Azure services, management, and architecture.' },
+  { id: 2, title: 'Introduction to Cloud Computing', category: 'Cloud Certification', image: intrtocloud, Date: 'Feb 2025', description: 'Fundamentals of Cloud Computing and its applications.' },
   { id: 3, title: 'Introduction to Cybersecurity', category: 'Cybersecurity', image: introtocyber, Date: 'July 2023', description: 'Covers basics of cybersecurity principles and best practices.' },
-  { id: 4, title: 'Game Development & Modeling', category: 'Game Development', image: Game, Date: 'June 2021', description: 'Focus on game development concepts, design, and 3D modeling.' },
-  { id: 5, title: 'Office Automation (Word, Excel, PowerPoint)', category: 'Office Automation', image: Askary, Date: 'August 2016', description: 'Training on MS Office tools for professional tasks.' },
-  { id: 6, title: 'Introduction to Cloud Computing', category: 'Cloud Certification', image: intrtocloud, Date: 'Feb 2025', description: 'Fundamentals of Cloud Computing and its applications.' },
+  { id: 4, title: 'Microsoft Azure: AZ-900 AZ-104 and AZ-305', category: 'Cloud Certification', image: azurecloud, Date: 'Feb 2022', description: 'Comprehensive training on Azure services, management, and architecture.' },
+  { id: 5, title: 'Game Development & Modeling', category: 'Game Development', image: Game, Date: 'June 2021', description: 'Focus on game development concepts, design, and 3D modeling.' },
+  { id: 6, title: 'Office Automation (Word, Excel, PowerPoint)', category: 'Office Automation', image: Askary, Date: 'August 2016', description: 'Training on MS Office tools for professional tasks.' },
 ];
 
 function AllCertificates() {
