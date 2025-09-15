@@ -9,11 +9,11 @@ import introtocloud from './Intro-to-Cloud.png';
 
 const certificatesData = [
   { id: 1, title: 'AWS Cloud Practitioner', category: 'Cloud Certification', image: AWSCERT, Date: 'Feb 2025' },
-  { id: 2, title: 'Microsoft Azure: Hands On Training: AZ-900 AZ-104 and AZ-305', category: 'Cloud Certification', image: Azure, Date: 'Feb 2022' },
+  { id: 2, title: 'Introduction to Cloud Computing', category: 'Cloud Certification', image: introtocloud, Date: 'Feb 2025' },
   { id: 3, title: 'Introduction to Cybersecurity', category: 'Cybersecurity', image: introtocyber, Date: 'July 2023' },
-  { id: 4, title: 'Game Development & Modeling', category: 'Game Development', image: Game, Date: 'June 2021' },
-  { id: 5, title: 'Office Automation (Word, Excel, PowerPoint)', category: 'Office Automation', image: Askary, Date: 'August 2016' },
-  { id: 6, title: 'Introduction to Cloud Computing', category: 'Cloud Certification', image: introtocloud, Date: 'Feb 2025' },
+  { id: 4, title: 'Microsoft Azure: Hands On Training: AZ-900 AZ-104 and AZ-305', category: 'Cloud Certification', image: Azure, Date: 'Feb 2022' },
+  { id: 5, title: 'Game Development & Modeling', category: 'Game Development', image: Game, Date: 'June 2021' },
+  { id: 6, title: 'Office Automation (Word, Excel, PowerPoint)', category: 'Office Automation', image: Askary, Date: 'August 2016' },
 ];
 
 function Certificates() {
